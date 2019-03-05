@@ -1,31 +1,61 @@
-Ret: Pandekager
-Mel
-15 kr.
-Æg
-20 kr.
----------------------------------
 Ret: Lasagne
 Pastaplader
 15 kr.
 Oksekød
 15 kr.
----------------------------------
-Ret: Boller i karry
-Ris
-5 kr.
-karry
-10 kr.
----------------------------------
-Ret: Tacos
-Salsa
-15 kr.
-Oksekød
-15 kr.
----------------------------------
+______________________________________________
 Ret: Salat
 Iceberg
 10 kr.
 Tomat
 15 kr.
----------------------------------
-Prisen for denne uges mad er: 135 kr.
+______________________________________________
+Ret: Pandekager
+Mel
+15 kr.
+Æg
+20 kr.
+______________________________________________
+Ret: Boller i karry
+Ris
+5 kr.
+karry
+10 kr.
+______________________________________________
+Ret: Tacos
+Salsa
+15 kr.
+Oksekød
+15 kr.
+______________________________________________
+Ret: Pandekager
+Mel
+15 kr.
+Æg
+20 kr.
+______________________________________________
+Ret: Tacos
+Salsa
+15 kr.
+Oksekød
+15 kr.
+______________________________________________
+Ret: Burger
+Bøffer
+30 kr.
+Burgerboller
+15 kr.
+______________________________________________
+Ret: Lasagne
+Pastaplader
+15 kr.
+Oksekød
+15 kr.
+______________________________________________
+Ret: Boller i karry
+Ris
+5 kr.
+karry
+10 kr.
+______________________________________________
+Prisen for denne uges mad er: 290 kr.

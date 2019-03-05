@@ -5,21 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Madplan"
         mc:Ignorable="d"
-        Title="Madplan" Height="450" Width="800" Cursor="Arrow">
-    <Grid Cursor="Arrow">
+        Title="Madplan" Cursor="Arrow" Background="#FF3A3434">
+    <Grid Cursor="Arrow" Width="800" Height="447">
         <Button Content="Lav madplan" HorizontalAlignment="Left" Margin="218,350,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Background="#FF27BF0E"/>
-        <Button Name="buttonIndkøb"  Content="Lav indkøbsliste" HorizontalAlignment="Left" Margin="387,350,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1" IsEnabled="False" Background="#FF27BF0E" Cursor="Arrow"/>
+        <Button Name="buttonIndkøb"  Content="Lav indkøbsliste" HorizontalAlignment="Left" Margin="386,350,0,0" VerticalAlignment="Top" Width="100" Click="Button_Click_1" IsEnabled="False" Background="#FF27BF0E" Cursor="Arrow"/>
         <Label Content="Mandag" HorizontalAlignment="Left" Margin="94,94,0,0" VerticalAlignment="Top" BorderBrush="#FFE60F0F" Background="#FF6E6969" RenderTransformOrigin="0.5,1.474" MinWidth="80"/>
         <Label Content="Tirsdag" HorizontalAlignment="Left" Margin="226,94,0,0" VerticalAlignment="Top" Background="#FF6E6969" MinWidth="80"/>
         <Label Content="Onsdag" HorizontalAlignment="Left" Margin="346,94,0,0" VerticalAlignment="Top" Background="#FF6E6969" RenderTransformOrigin="0.418,2.962" MinWidth="80"/>
         <Label Content="Torsdag" HorizontalAlignment="Left" Margin="490,94,0,0" VerticalAlignment="Top" Background="#FF6E6969" MinWidth="80" RenderTransformOrigin="0.775,0.526"/>
         <Label Content="Fredag" HorizontalAlignment="Left" Margin="626,94,0,0" VerticalAlignment="Top" Background="#FF6E6969" RenderTransformOrigin="1.113,0.577" MinWidth="80"/>
-        <Label Name ="labelMandag" Content="" HorizontalAlignment="Left" Margin="94,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.767,0.679"/>
-        <Label x:Name ="labelTirsdag" Content="" HorizontalAlignment="Left" Margin="226,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.6,0.5"/>
-        <Label x:Name ="labelOnsdag" Content="" HorizontalAlignment="Left" Margin="346,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.321"/>
-        <Label x:Name ="labelTorsdag" Content="" HorizontalAlignment="Left" Margin="490,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.133,0.551"/>
-        <Label x:Name ="labelFredag" Content="" HorizontalAlignment="Left" Margin="626,170,0,0" VerticalAlignment="Top"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="399" VerticalAlignment="Top" Width="760" Margin="10,0,0,0"/>
+        <Label Name ="labelMandag" Content="" HorizontalAlignment="Left" Margin="94,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.767,0.679" Foreground="White" Background="{x:Null}" BorderBrush="Black"/>
+        <Label x:Name ="labelTirsdag" Content="" HorizontalAlignment="Left" Margin="226,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.6,0.5" Foreground="White"/>
+        <Label x:Name ="labelOnsdag" Content="" HorizontalAlignment="Left" Margin="346,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.321" Foreground="White"/>
+        <Label x:Name ="labelTorsdag" Content="" HorizontalAlignment="Left" Margin="490,170,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.133,0.551" Foreground="White"/>
+        <Label x:Name ="labelFredag" Content="" HorizontalAlignment="Left" Margin="626,170,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button Name="buttonLuk"  Content="Luk" HorizontalAlignment="Left" Margin="580,350,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2" Background="#FFF70B0B" BorderBrush="#FFF90909" IsEnabled="False"/>
 
 
     </Grid>

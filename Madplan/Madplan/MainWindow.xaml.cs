@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Path = System.IO.Path;
 
 namespace Madplan
 {
@@ -30,19 +32,19 @@ namespace Madplan
         public MainWindow()
         {
             InitializeComponent();
-            alleRetter = HentAlleRetter();
+            alleRetter = HentAlleRetter();//AlleRetterHentes
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+
             LavMadPlan();
             alleRetter = HentAlleRetter();
-            buttonIndkøb.IsEnabled = true;
+            buttonIndkøb.IsEnabled = true;//Knap til indkøbsliste kan først trykkes på efter at madplan er dannet ved tryk på "Lav madplan"
         }
         public void LavMadPlan()
         {
-          int randomNumber = random.Next(0, alleRetter.Count);
+            int randomNumber = random.Next(0, alleRetter.Count);
 
             //Mandag
             labelMandag.Content = alleRetter[randomNumber].navn;
@@ -103,6 +105,11 @@ namespace Madplan
             Tacos.ingredienser.Add(new Ingrediens("Oksekød", 15));
             lokalliste.Add(Tacos);
 
+            Ret Burger = new Ret("Burger", new List<Ingrediens>());
+            Burger.ingredienser.Add(new Ingrediens("Bøffer", 30));
+            Burger.ingredienser.Add(new Ingrediens("Burgerboller", 15));
+            lokalliste.Add(Burger);
+
 
 
             return lokalliste;
@@ -110,8 +117,10 @@ namespace Madplan
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            buttonLuk.IsEnabled = true; //"Luk" knappen bliver først aktiv efter at indkøbslisten er genereret.
+
             double prisIAlt = 0;
-            StreamWriter writer = new StreamWriter("Indkøbsliste.txt");
+            StreamWriter writer = new StreamWriter("Indkøbsliste.txt"); //https://stackoverflow.com/questions/32747/how-do-i-get-todays-date-in-c-sharp-in-mm-dd-yyyy-format
             foreach (Ret ret in ugensRetter)
             {
                 writer.WriteLine("Ret: " + ret.navn);
@@ -121,11 +130,25 @@ namespace Madplan
                     writer.WriteLine(ret.ingredienser[i].pris + " kr.");
                     prisIAlt += ret.ingredienser[i].pris;
                 }
-                writer.WriteLine("---------------------------------");
+                writer.WriteLine("______________________________________________");
             }
             writer.WriteLine("Prisen for denne uges mad er: " + prisIAlt + " kr.");
             writer.Close();
+            MessageBox.Show("Indkøbslisten er nu genereret!");
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Process.Start("Indkøbsliste.txt"); //Åbner den generede "Indkøbsliste.txt" når der trykkes på knappen.
+            
+            
+
+            this.Close(); //Dernæst lukkes programmet
+        }
+        public class Indkøbsliste
+        {
+            public static string txt { get; internal set; }
+        };
     }
 
     class Ret
