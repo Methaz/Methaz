@@ -1,0 +1,15 @@
+C:\Users\Christoffer\source\repos\Madplan\Madplan\bin\Debug\Madplan.exe.config
+C:\Users\Christoffer\source\repos\Madplan\Madplan\bin\Debug\Madplan.exe
+C:\Users\Christoffer\source\repos\Madplan\Madplan\bin\Debug\Madplan.pdb
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.csprojAssemblyReference.cache
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\MainWindow.g.cs
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\App.g.cs
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan_MarkupCompile.cache
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan_MarkupCompile.lref
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\MainWindow.baml
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.g.resources
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.Properties.Resources.resources
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.csproj.GenerateResource.cache
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.csproj.CoreCompileInputs.cache
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.exe
+C:\Users\Christoffer\source\repos\Madplan\Madplan\obj\Debug\Madplan.pdb
